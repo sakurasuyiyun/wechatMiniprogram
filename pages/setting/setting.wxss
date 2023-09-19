@@ -1,0 +1,9 @@
+.grap{
+    width: 100%;
+    height: 20rpx;
+    background: #f2f2f2;
+}
+
+.title-class{
+    color: #e4393c;
+}

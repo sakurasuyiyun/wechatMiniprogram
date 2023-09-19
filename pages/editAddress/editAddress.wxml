@@ -1,0 +1,98 @@
+<view class="container">
+    <view class="item">
+        <van-cell-group>
+            <van-field
+                    value="{{ name }}"
+                    placeholder="请输入用户名"
+                    border="{{ false }}"
+                    label="收货人姓名"
+                    bind:change="input"
+                    data-name="name"
+            />
+        </van-cell-group>
+        <van-cell-group>
+            <van-field
+                    value="{{ phone }}"
+                    placeholder="请输入用户名"
+                    border="{{ false }}"
+                    label="收货人电话"
+                    bind:change="input"
+                    data-name="phone"
+            />
+        </van-cell-group>
+        <van-cell-group>
+            <van-field
+                    value="{{ fieldValue }}"
+                    is-link
+                    readonly
+                    label="地区"
+                    placeholder="请选择所在地区"
+                    bind:tap="onClick"
+            />
+            <van-popup show="{{ show }}" round position="bottom">
+                <van-cascader
+                        wx:if="{{ show }}"
+                        value="{{ cascaderValue }}"
+                        title="请选择所在地区"
+                        options="{{ options }}"
+                        bind:close="onClose"
+                        bind:finish="onFinish"
+                />
+            </van-popup>
+        </van-cell-group>
+        <van-cell-group>
+            <van-field
+                    value="{{ addressDetail }}"
+                    placeholder="详细地址"
+                    border="{{ false }}"
+                    bind:change="input"
+                    label="详细地址"
+                    type="textarea"
+                    autosize="{ maxHeight: 150, minHeight: 100 }"
+                    data-name="addressDetail"
+            />
+        </van-cell-group>
+        <view class="tag">
+            <view class="tag-item {{activeIndex === 0 ? 'active' : ''}}" data-tag="家" data-index="0"
+                  bind:tap="tagClick">
+                <text>家</text>
+            </view>
+            <view class="tag-item {{activeIndex === 1 ? 'active' : ''}}" data-tag="公司" data-index="1"
+                  bind:tap="tagClick">
+                <text>公司</text>
+            </view>
+            <view class="tag-item {{activeIndex === 2 ? 'active' : ''}}" data-tag="学校" data-index="2"
+                  bind:tap="tagClick">
+                <text>学校</text>
+            </view>
+        </view>
+        <view class="default">
+            <view class="default-item">
+                <view class="default-title">
+                    <text>是否为默认地址</text>
+                </view>
+                <view class="default-right">
+                    <van-switch
+                            checked="{{ isDefault }}"
+                            active-color="#1E90FF"
+                            inactive-color="#ffffff"
+                            bind:change="defaultChange"
+                            size="48rpx"
+                    />
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="btn">
+    <view class="btn-item" bind:tap="submit">
+        <text>提交</text>
+    </view>
+    <view class="btn-item del" bind:tap="confirm">
+        <text>删除</text>
+    </view>
+</view>
+
+<view class="component">
+    <van-dialog id="van-dialog" />
+</view>

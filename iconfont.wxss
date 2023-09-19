@@ -1,0 +1,62 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 3618270 */
+  src: url('//at.alicdn.com/t/c/font_3618270_3gct10qsntm.woff2?t=1694765521781') format('woff2'),
+  url('//at.alicdn.com/t/c/font_3618270_3gct10qsntm.woff?t=1694765521781') format('woff'),
+  url('//at.alicdn.com/t/c/font_3618270_3gct10qsntm.ttf?t=1694765521781') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-huiyuanqialeixingguanli:before {
+  content: "\e65a";
+}
+
+.icon-shoucang:before {
+  content: "\e628";
+}
+
+.icon-yuanxingweixuanzhong:before {
+  content: "\e72f";
+}
+
+.icon-yuanxingxuanzhongfill:before {
+  content: "\e730";
+}
+
+.icon-fanhui:before {
+  content: "\e603";
+}
+
+.icon-sousuo:before {
+  content: "\e602";
+}
+
+.icon-shouye:before {
+  content: "\e600";
+}
+
+.icon-31dingdan:before {
+  content: "\e601";
+}
+
+.icon-gouwuche:before {
+  content: "\e899";
+}
+
+.icon-xiaoxitixing:before {
+  content: "\e631";
+}
+
+.icon-dingwei:before {
+  content: "\e8ae";
+}
+
+.icon-wode:before {
+  content: "\e8bb";
+}

@@ -1,0 +1,142 @@
+page{
+    background-color: #f2f2f2;
+}
+
+.order-list{
+    padding: 16rpx 32rpx;
+}
+
+.order-item{
+    background-color: #fff;
+    padding: 20rpx;
+    border-radius: 20rpx;
+}
+
+.shop-info{
+    display: flex;
+    align-items: center;
+}
+
+.shop-name{
+    font-weight: 500;
+    font-size: 36rpx;
+    margin-left: 20rpx;
+}
+
+.order-status{
+    margin-left: auto;
+    font-size: 28rpx;
+    color: #999;
+}
+
+.shop-img{
+    width: 48rpx;
+    height: 48rpx;
+    border: 2rpx solid  #ccc;
+    padding: 10rpx;
+    border-radius: 50%;
+}
+
+.shop-img image{
+    width: 100%;
+    display: block;
+}
+
+.product{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20rpx;
+}
+
+.product-left{
+    display: flex;
+    align-items: center;
+}
+
+.product-desc{
+    margin-left: 20rpx;
+}
+
+.product-img{
+    width: 132rpx;
+    height: 132rpx;
+}
+
+.product-img image{
+    width: 100%;
+    display: block;
+}
+
+.product-right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-price{
+    font-size: 30rpx;
+    font-weight: 700;
+}
+
+.product-count{
+    font-size: 24rpx;
+    color: #999;
+    margin-top: 5rpx;
+}
+
+.btn{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 10rpx;
+}
+
+.btn text{
+    border: 2rpx solid dodgerblue;
+    color: dodgerblue;
+    height: 40rpx;
+    line-height: 40rpx;
+    padding: 10rpx 20rpx;
+    border-radius: 40rpx;
+    font-size: 26rpx;
+    margin-left: 20rpx;
+}
+
+.danger{
+    border-color: #ff0045 !important;
+    color: #ff0045 !important;
+}
+
+.warning{
+    border-color: #e6a23c !important;
+    color: #e6a23c !important;
+}
+
+.none{
+    display: none;
+    padding: 0;
+    margin: 0;
+}
+
+.pwd{
+    text-align: center;
+    height: 60rpx;
+    line-height: 60rpx;
+    margin-top: 60rpx;
+}
+
+.input{
+    width: 40%;
+    height: 100rpx;
+    line-height: 100rpx;
+    margin: 0 auto;
+    border: 1px solid black;
+    margin-top: 30rpx;
+    border-radius: 20rpx;
+}
+
+.pwd-input{
+    width: 100%;
+    height: 100rpx;
+    line-height: 100rpx;
+}

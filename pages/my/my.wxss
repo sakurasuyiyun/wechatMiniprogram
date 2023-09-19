@@ -1,0 +1,168 @@
+page {
+    background-color: #f2f2f2;
+}
+
+.header {
+    width: 100%;
+    margin-top: 20rpx;
+    /*background-color: #fff;*/
+}
+
+.user-info {
+    padding: 16rpx 32rpx;
+    display: flex;
+    align-items: center;
+    color: #999;
+    font-size: 28rpx;
+}
+
+.avatar {
+    width: 120rpx;
+    height: 120rpx;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.avatar image {
+    width: 100%;
+    display: block;
+}
+
+.user-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 20rpx;
+}
+
+.user-setting {
+    margin-left: auto;
+    color: #333;
+    border: 2rpx solid #ddd;
+    padding: 4rpx 25rpx;
+    border-radius: 25rpx;
+    box-shadow: 0 0 2rpx #333;
+}
+
+.member-card {
+    color: white;
+    margin-top: 20rpx;
+    padding: 0 32rpx;
+}
+
+.member-card-content {
+    box-sizing: border-box;
+    background-color: #414558;
+    border-radius: 20rpx 20rpx 0 0;
+    padding: 16rpx 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 80rpx;
+}
+
+.member-desc {
+    display: flex;
+    flex-direction: column;
+    font-size: 24rpx;
+    margin-left: 20rpx;
+    color: #9ea6b5;
+}
+
+.member-points {
+    margin-right: 20rpx;
+    font-size: 24rpx;
+    color: #e2ecf9;
+    display: flex;
+    align-items: center;
+}
+
+.member-title {
+    font-weight: bold;
+    font-size: 36rpx;
+    color: #e2ecf9;
+    font-style: italic;
+    margin-bottom: 10rpx;
+}
+
+.member-score {
+    font-size: 36rpx;
+    letter-spacing: .01em;
+}
+
+.member-text {
+    margin: 0 10rpx;
+}
+
+.user-function {
+    padding: 0 32rpx;
+    margin-top: -60rpx;
+}
+
+.user-function-list {
+    box-sizing: border-box;
+    padding: 16rpx 0;
+    border-radius: 20rpx 20rpx 0 0;
+    background-color: #fff;
+    display: flex;
+}
+
+.user-function-item {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10rpx 0;
+}
+
+.user-function-item text {
+    margin-top: 10rpx;
+}
+
+.icon-img {
+    width: 50rpx;
+    height: 50rpx;
+}
+
+.icon-img image {
+    width: 100%;
+    display: block;
+}
+
+.normal-use {
+    margin-top: 20rpx;
+    padding: 0 32rpx;
+}
+
+.normal-use-content {
+    background-color: #fff;
+    box-sizing: border-box;
+    border-radius: 20rpx;
+    padding: 16rpx 0;
+}
+
+.normal-title {
+    margin-left: 20rpx;
+}
+
+.normal-use-content-list {
+    display: flex;
+    align-items: center;
+}
+
+.normal-use-content-item {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 22rpx;
+    color: #666;
+    margin-top: 20rpx;
+    padding: 10rpx 0;
+}
+
+.icon{
+    font-size: 54rpx;
+    margin-bottom: 5rpx;
+}

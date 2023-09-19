@@ -1,0 +1,15 @@
+<view class="container">
+    <view class="products">
+        <view class="product-list">
+            <view class="product-item">
+                <view class="product-img">
+                    <image src="http://1.12.73.162/wechatMiniprogram/products/mcd/jwb.png" mode="widthFix"></image>
+                </view>
+                <view class="product-desc">
+                    <text class="title">巨无霸</text>
+                    <text></text>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,185 @@
+<!--
+此文件为开发者工具生成，生成时间: 2023/9/12下午10:56:35
+使用方法：
+在 /Users/sakura_suyiyun/WeChatProjects/miniprogram-5/pages/shop/shop.wxml 引入模板
+
+```
+<import src="shop.skeleton.wxml"/>
+<template is="skeleton" wx:if="{{loading}}" />
+```
+
+在 /Users/sakura_suyiyun/WeChatProjects/miniprogram-5/pages/shop/shop.wxss 中引入样式
+```
+@import "./shop.skeleton.wxss";
+```
+
+更多详细信息可以参考文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/skeleton.html
+-->
+<template name="skeleton">
+  <view class="sk-container">
+    <view class="container">
+      <view class="header">
+        <view class="shop-info">
+          <view class="shop-name">
+            <text class="sk-transparent sk-text-16-6667-300 sk-text">麦肯牢</text>
+          </view>
+          <view class="shop-desc">
+            <text class="shop-info-rank sk-transparent sk-text-14-2857-301 sk-text">5.0分</text>
+            <text class="sk-transparent sk-text-14-2857-96 sk-text">商家配送</text>
+            <text class="sk-transparent sk-text-14-2857-834 sk-text">约30分钟</text>
+            <text class="sk-transparent sk-text-14-2857-990 sk-text">月售8888+</text>
+            <text class="sk-transparent sk-text-14-2857-969 sk-text">开发票</text>
+          </view>
+          <view class="shop-logo">
+            <image mode="widthFix" style="height: 38px;" class="sk-image"></image>
+          </view>
+        </view>
+      </view>
+      <view class="shop-product">
+        <view is="miniprogram_npm/@vant/weapp/sidebar/index">
+          <view class="van-sidebar sidebar-index--van-sidebar ">
+            <view is="miniprogram_npm/@vant/weapp/sidebar-item/index" data-category="1">
+              <view class="van-sidebar-item sidebar-item-index--van-sidebar-item van-sidebar-item--selected sidebar-item-index--van-sidebar-item--selected  " hover-class="van-sidebar-item--hover" hover-stay-time="70">
+                <view class="van-sidebar-item__text sidebar-item-index--van-sidebar-item__text">
+                  <view class="sk-transparent sk-text-15-0000-896 sk-text">汉堡</view>
+                </view>
+              </view>
+            </view>
+            <view is="miniprogram_npm/@vant/weapp/sidebar-item/index" data-category="2">
+              <view class="van-sidebar-item sidebar-item-index--van-sidebar-item " hover-class="van-sidebar-item--hover" hover-stay-time="70">
+                <view class="van-sidebar-item__text sidebar-item-index--van-sidebar-item__text">
+                  <view class="sk-transparent sk-text-15-0000-310 sk-text">可乐</view>
+                </view>
+              </view>
+            </view>
+            <view is="miniprogram_npm/@vant/weapp/sidebar-item/index" data-category="3">
+              <view class="van-sidebar-item sidebar-item-index--van-sidebar-item " hover-class="van-sidebar-item--hover" hover-stay-time="70">
+                <view class="van-sidebar-item__text sidebar-item-index--van-sidebar-item__text">
+                  <view class="sk-transparent sk-text-15-0000-822 sk-text">小食</view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+        <view class="product-content">
+          <view class="product-list">
+            <view class="product-item">
+              <view class="product-img">
+                <image mode="widthFix" style="height: 80px;" class="sk-image"></image>
+              </view>
+              <view class="product-info">
+                <view class="product-title">
+                  <text class="sk-transparent sk-text-14-2857-277 sk-text">巨无霸</text>
+                </view>
+                <view class="product-desc">
+                  <text class="sk-transparent sk-text-16-6667-696 sk-text">全新升级巨无霸超霸登场！两块百分百纯牛肉搭配洋葱煎制，风味增强；增加50%美味酱料，浓郁拉满，搭配新升级满满嚼劲面包，芝士，生菜与酸黄瓜，味蕾层层爆炸！</text>
+                </view>
+                <view class="product-price">
+                  <text class="sk-transparent sk-text-14-2857-599 sk-text">¥25.00</text>
+                  <view class="product-control">
+                    <view class="add sk-transparent sk-text-8-8235-476 sk-text" data-add="1" data-product_id="1" style="background-position-x: 50%;">+
+                    </view>
+                  </view>
+                </view>
+              </view>
+            </view>
+            <view class="product-item">
+              <view class="product-img">
+                <image mode="widthFix" style="height: 80px;" class="sk-image"></image>
+              </view>
+              <view class="product-info">
+                <view class="product-title">
+                  <text class="sk-transparent sk-text-14-2857-964 sk-text">汉堡包</text>
+                </view>
+                <view class="product-desc">
+                  <text class="sk-transparent sk-text-16-6667-847 sk-text">百分百纯牛肉只以少许盐与胡椒调味配搭爽脆酸瓜洋葱粒与美味番茄醬经典滋味让你无法抵挡！</text>
+                </view>
+                <view class="product-price">
+                  <text class="sk-transparent sk-text-14-2857-429 sk-text">¥13.00</text>
+                  <view class="product-control">
+                    <view class="add sk-transparent sk-text-8-8235-713 sk-text" data-add="1" data-product_id="2" style="background-position-x: 50%;">+
+                    </view>
+                  </view>
+                </view>
+              </view>
+            </view>
+            <view class="product-item">
+              <view class="product-img">
+                <image mode="widthFix" style="height: 80px;" class="sk-image"></image>
+              </view>
+              <view class="product-info">
+                <view class="product-title">
+                  <text class="sk-transparent sk-text-14-2857-766 sk-text">板烧鸡腿堡</text>
+                </view>
+                <view class="product-desc">
+                  <text></text>
+                </view>
+                <view class="product-price">
+                  <text class="sk-transparent sk-text-14-2857-200 sk-text">¥23.00</text>
+                  <view class="product-control">
+                    <view class="add sk-transparent sk-text-8-8235-887 sk-text" data-add="1" data-product_id="3" style="background-position-x: 50%;">+
+                    </view>
+                  </view>
+                </view>
+              </view>
+            </view>
+            <view class="product-item">
+              <view class="product-img">
+                <image mode="widthFix" style="height: 80px;" class="sk-image"></image>
+              </view>
+              <view class="product-info">
+                <view class="product-title">
+                  <text class="sk-transparent sk-text-14-2857-855 sk-text">麦辣鸡腿汉堡</text>
+                </view>
+                <view class="product-desc">
+                  <text></text>
+                </view>
+                <view class="product-price">
+                  <text class="sk-transparent sk-text-14-2857-458 sk-text">¥22.00</text>
+                  <view class="product-control">
+                    <view class="add sk-transparent sk-text-8-8235-939 sk-text" data-add="1" data-product_id="4" style="background-position-x: 50%;">+
+                    </view>
+                  </view>
+                </view>
+              </view>
+            </view>
+            <view class="product-item">
+              <view class="product-img">
+                <image mode="widthFix" style="height: 80px;" class="sk-image"></image>
+              </view>
+              <view class="product-info">
+                <view class="product-title">
+                  <text class="sk-transparent sk-text-14-2857-539 sk-text">可口可乐</text>
+                </view>
+                <view class="product-desc">
+                  <text></text>
+                </view>
+                <view class="product-price">
+                  <text class="sk-transparent sk-text-14-2857-124 sk-text">¥9.00</text>
+                  <view class="product-control">
+                    <view class="add sk-transparent sk-text-8-8235-4 sk-text" data-add="1" data-product_id="5" style="background-position-x: 50%;">+
+                    </view>
+                  </view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="bottom">
+        <view class="product-bag">
+          <view class="bag-img">
+            <image mode="widthFix" style="height: 22px;" class="sk-image"></image>
+          </view>
+          <view class="bag-info">
+            <text class="bag-price sk-transparent">¥<text class="sk-transparent sk-opacity">0</text></text>
+            <text class="sk-transparent sk-text-14-2857-654 sk-text">另需配送费约¥9</text>
+          </view>
+        </view>
+        <view class="submit-btn sk-transparent sk-text-14-2857-900 sk-text">
+          ¥0起送
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

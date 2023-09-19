@@ -1,0 +1,18 @@
+<view class="container">
+    <view class="address-list">
+        <view class="address-item {{active === index ? 'active' : ''}}" data-index="{{index}}" wx:for="{{list}}" wx:key="index" data-addressId="{{item._id}}" bind:tap="choose">
+            <view class="user-info">
+                <view class="user-name">
+                    <text>{{item.name}}</text>
+                    <text> {{item.phone_number}}</text>
+                    <text class="tag" wx:if="{{item.isDefault === '1'}}"> 默认</text>
+                    <text class="tag normal" wx:else>{{item.tag}}</text>
+                </view>
+                <text>{{item.detail}}</text>
+            </view>
+            <view class="user-edit" data-address_id="{{item._id}}" bind:tap="editAddress">
+                编辑
+            </view>
+        </view>
+    </view>
+</view>

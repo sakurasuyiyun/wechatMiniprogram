@@ -1,0 +1,57 @@
+<view class="container">
+    <view class="order-list" wx:for="{{newData}}" wx:for-index="key"  wx:for-item="value">
+        <view class="order-item {{b.status === 4 ? 'none' : ''}}" wx:for="{{value}}" wx:for-index="a"  wx:for-item="b">
+            <view class="shop-info">
+                <view class="shop-img">
+                    <image src="{{b.shop_imgUrl}}" mode="widthFix"></image>
+                </view>
+                <view class="shop-name">
+                    <text>{{b.shop_name}}</text>
+                </view>
+                <view class="order-status">
+                    <text>{{b.status === 0 ? '已下单' : b.status === 1 ? '骑手配送中' : b.status === 2 ? '已完成' : b.status === 9 ? '未支付' : '已取消'}}</text>
+                </view>
+            </view>
+            <view class="product">
+                <view class="product-left">
+                    <view class="product-img">
+                        <image src="{{b.product_imgUrl}}" mode="widthFix"></image>
+                    </view>
+                    <view class="product-desc">
+                        <text>{{b.product_name}}</text>
+                    </view>
+                </view>
+                <view class="product-right">
+                    <text class="product-price">¥{{b.order_price}}</text>
+                    <text class="product-count">共{{b.product_count}}件</text>
+                </view>
+            </view>
+            <view class="btn">
+                <text wx:if="{{b.status === 1}}" data-order="{{b.order_id}}" data-type="confirm" bind:tap="changeOrderStatus">确认收货</text>
+                <text wx:if="{{b.status === 0 || b.status === 1 || b.status === 9}}" class="warning" data-type="cancel" data-order="{{b.order_id}}" bind:tap="changeOrderStatus">取消订单</text>
+                <view wx:if="{{b.status === 2}}" class="finish">
+                    <text data-order="{{b.order_id}}">再来一单</text>
+                    <text data-order="{{b.order_id}}">评价</text>
+                </view>
+                <text wx:if="{{b.status === 3}}" class="danger" data-type="del" data-order="{{b.order_id}}" bind:tap="changeOrderStatus">删除订单</text>
+                <text wx:if="{{b.status === 9}}" data-order="{{b.order_id}}" data-type="pay" bind:tap="showMask">前往支付</text>
+            </view>
+        </view>
+    </view>
+</view>
+
+<view class="component">
+    <van-popup
+            show="{{ show }}"
+            position="bottom"
+            custom-style="height: 30%;"
+            bind:close="maskClose"
+    >
+        <view class="pwd">
+            <view class="pwd-title">请输入支付密码</view>
+            <view class="input">
+                <input class="pwd-input" model:value="{{pwd}}" type="password" maxlength="{{6}}" bind:input="pwdChange"></input>
+            </view>
+        </view>
+    </van-popup>
+</view>

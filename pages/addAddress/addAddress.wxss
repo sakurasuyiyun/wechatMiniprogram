@@ -1,0 +1,52 @@
+.tag{
+    padding: 16rpx 32rpx;
+    display: flex;
+    align-items: center;
+    margin-top: 30rpx;
+}
+
+.tag-item{
+    width: auto;
+    height: 60rpx;
+    line-height: 60rpx;
+    margin-right: 30rpx;
+    border-radius: 60rpx;
+    border: 2rpx solid black;
+    padding: 0 25rpx;
+    font-size: 28rpx;
+}
+
+.tag-item.active{
+    border-color: dodgerblue;
+    color: dodgerblue;
+}
+
+.default{
+    padding: 16rpx 32rpx;
+    margin-top: 20rpx;
+}
+
+.default-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn{
+    width: 95%;
+    position: fixed;
+    bottom: 20rpx;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.btn-item{
+    width: 100%;
+    background-color: dodgerblue;
+    color: white;
+    font-size: 28rpx;
+    text-align: center;
+    height: 60rpx;
+    line-height: 60rpx;
+    border-radius: 60rpx;
+}

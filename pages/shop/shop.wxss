@@ -1,0 +1,270 @@
+.header {
+    width: 90%;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 15rpx;
+    margin-top: 20rpx;
+    padding: 10rpx 0;
+    box-shadow: 0rpx 0rpx 8rpx #ccc;
+}
+
+.shop-info {
+    position: relative;
+    padding: 16rpx 32rpx;
+}
+
+.shop-name {
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    font-size: 36rpx;
+    line-height: 1.5;
+    overflow: hidden;
+    white-space: normal;
+    word-break: break-all;
+    font-weight: bold;
+}
+
+.shop-desc{
+    font-size: 24rpx;
+}
+
+.shop-desc text{
+    margin-left: 10rpx;
+}
+
+.shop-desc text:nth-child(1){
+    margin-left: 0;
+}
+
+.shop-info-rank{
+    color: #ed6d2d;
+    font-weight: bold;
+    font-size: 32rpx;
+}
+
+.shop-logo{
+    width: 76rpx;
+    height: 76rpx;
+    position: absolute;
+    top: 20rpx;
+    right: 20rpx;
+    border-radius: 20rpx;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 10rpx;
+}
+
+.shop-logo image{
+    width: 100%;
+    display: block;
+}
+
+.shop-member-card{
+    width: 90%;
+    margin: 0 auto;
+    background-color: #f5c242;
+    height: 100rpx;
+    border-radius: 20rpx;
+    margin-top: 30rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24rpx;
+}
+
+.card-info{
+    display: flex;
+    flex-direction: column;
+    margin-left: 25rpx;
+}
+
+.title{
+    font-weight: bold;
+    font-size: 30rpx;
+}
+
+.card-btn{
+    margin-right: 25rpx;
+    font-size: 26rpx;
+    color: white;
+    background-color: #6d3d24;
+    border-radius: 20rpx;
+    padding: 4rpx 20rpx;
+    font-weight: 200;
+}
+
+.shop-product{
+    margin-top: 20rpx;
+    display: flex;
+}
+
+.product-content{
+    width: 100%;
+    margin-left: 20rpx;
+}
+
+.product-list{
+    margin-bottom: 100rpx;
+}
+
+.product-item{
+    display: flex;
+    /*justify-content: space-between;*/
+    margin-right: 20rpx;
+    /*border: 1px solid black;*/
+    padding: 16rpx 0 24rpx 16rpx;
+    border-bottom: 2rpx solid #eee;
+}
+
+.product-info{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10rpx;
+    width: 100%;
+}
+
+.product-desc{
+    height: 72rpx;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    font-size: 24rpx;
+    line-height: 1.5;
+    overflow: hidden;
+    white-space: normal;
+    word-break: break-all;
+    letter-spacing: .02em;
+    color: #999;
+    margin-top: 5rpx;
+}
+
+.product-price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 28rpx;
+    color: #ec5a41;
+    margin-top: 5rpx;
+}
+
+.product-control{
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+.sub,.add{
+    width: 40rpx;
+    height: 40rpx;
+    line-height: 35rpx;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 15rpx;
+}
+
+.sub{
+    background-color: #fff;
+    border: 1px solid black;
+}
+
+.add{
+    background-color: #d12d35;
+    color: white;
+}
+
+.product-img{
+    width: 160rpx;
+    height: 160rpx;
+    border-radius: 15rpx;
+    border: 1px solid #eee;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.product-img image{
+    width: 100%;
+    display: block;
+}
+
+.bottom{
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 100rpx;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 36rpx;
+    box-sizing: border-box;
+}
+
+.bag-img{
+    width: 80rpx;
+    height: 80rpx;
+    background-color: #ccc;
+    /*background-color: dodgerblue;*/
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.bag-img image{
+    width: 55%;
+    display: block;
+}
+
+.product-bag{
+    display: flex;
+    align-items: center;
+}
+
+.bag-info{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20rpx;
+    font-size: 24rpx;
+    color: #aaa;
+}
+
+.bag-price{
+    color: black;
+    font-weight: bold;
+}
+
+.bag-price text{
+    font-size: 36rpx;
+}
+
+.submit-btn{
+    background-color: #999999;
+    /*background-color: deepskyblue;*/
+    font-size: 28rpx;
+    color: white;
+    padding: 20rpx 60rpx;
+    border-radius: 50rpx;
+    font-weight: bold;
+}
+
+.btn-active{
+    background-color: dodgerblue;
+}
+
+.badge{
+    position: absolute;
+    right: 0;
+    top: 0;
+    min-width: 30rpx;
+    text-align: center;
+    height: 30rpx;
+    line-height: 30rpx;
+    font-size: 22rpx;
+    background-color: #e4393c;
+    color: white;
+    border-radius: 50%;
+}

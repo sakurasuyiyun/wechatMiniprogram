@@ -1,0 +1,15 @@
+<view class="container">
+    <view class="item">
+        <van-cell data-link="changePwd" title="修改登陆密码" bind:tap="jump" is-link />
+    </view>
+    <view class="item">
+        <van-cell data-link="changePayPwd" title="修改支付密码" bind:tap="jump" is-link />
+    </view>
+    <view class="item">
+        <van-cell data-link="changePhone" title="修改账号" bind:tap="jump" is-link />
+    </view>
+    <view class="grap"></view>
+    <view class="item">
+        <van-cell title-class="title-class" title="退出登录" is-link bind:tap="logout" />
+    </view>
+</view>

@@ -1,0 +1,15 @@
+.btn{
+    padding: 16rpx 32rpx;
+    margin-top: 30rpx;
+}
+
+.btn-item{
+    width: 100%;
+    background-color: darkgreen;
+    color: white;
+    text-align: center;
+    height: 60rpx;
+    line-height: 60rpx;
+    font-size: 24rpx;
+    border-radius: 30rpx;
+}

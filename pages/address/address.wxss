@@ -1,0 +1,71 @@
+page{
+    background-color: #f2f2f2;
+}
+
+.address-list{
+    padding: 16rpx 32rpx;
+}
+
+.address-item{
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 24rpx;
+    color: #666;
+    border-radius: 20rpx;
+    padding: 20rpx 0;
+    margin-bottom: 20rpx;
+}
+
+.user-info{
+    padding: 10rpx;
+    margin-left: 20rpx;
+}
+
+.user-name{
+    font-size: 28rpx;
+    margin-bottom: 10rpx;
+}
+
+.user-edit{
+    padding: 10rpx;
+    margin-right: 20rpx;
+}
+
+.tag{
+    background-color: #e4393c;
+    color: white;
+    font-size: 20rpx;
+    padding: 5rpx 10rpx;
+    border-radius: 10rpx;
+    margin-left: 20rpx;
+    text-align: center;
+    display: inline-block;
+}
+
+.tag.normal{
+    background-color: dodgerblue;
+}
+
+.btn{
+    padding: 16rpx 32rpx;
+}
+
+.btn text{
+    display: inline-block;
+    width: 95%;
+    height: 60rpx;
+    line-height: 60rpx;
+    text-align: center;
+    font-size: 24rpx;
+    background-color: dodgerblue;
+    color: white;
+    border-radius: 60rpx;
+    position: fixed;
+    left: 50%;
+    bottom: 30rpx;
+    transform: translateX(-50%);
+}
+

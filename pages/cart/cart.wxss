@@ -1,0 +1,25 @@
+page{
+    background-color: #f2f2f2;
+}
+
+.product-item{
+    background-color: #fff;
+    margin-top: 20rpx;
+    padding: 16rpx 32rpx;
+    display: flex;
+}
+
+.product-desc{
+    margin-left: 20rpx;
+}
+
+.product-img{
+    width: 150rpx;
+    height: 150rpx;
+    border: 2rpx solid black;
+}
+
+.product-img image{
+    width: 100%;
+    display: block;
+}

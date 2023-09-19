@@ -1,0 +1,47 @@
+<view class="container">
+    <van-toast id="van-toast"/>
+    <view class="header">
+        <view class="position">
+            <text class="iconfont icon-dingwei"></text>
+            <text class="add">城鳌大道东路999号</text>
+            <text class="iconfont icon-xiaoxitixing xs"></text>
+        </view>
+    </view>
+    <view class="content">
+        <view class="item">
+            <view class="item-list" wx:for="{{list}}" wx:key="index">
+                <image class="item-img" src="{{item.imgurl}}" mode="widthFix"></image>
+                <text class="title">{{item.title}}</text>
+            </view>
+        </view>
+    </view>
+    <view class="shop-content">
+        <view class="shop-list">
+            <view class="shop-item" data-shopId="{{item._id}}" data-shopName="{{item.shop_name}}" wx:for="{{shopList}}" wx:key="index" bind:tap="jump">
+                <view class="shop-img">
+                    <image src="{{item.shop_imgUrl}}" mode="widthFix"></image>
+                </view>
+                <view class="shop-info">
+                    <view class="shop-name">
+                        <text>{{item.shop_name}}</text>
+                    </view>
+
+                    <view class="shop-desc">
+                        <view class="shop-sales">
+                            <text class="shop-rank">{{item.shop_rank}}分</text>
+                            <text>月售{{item.shop_sales}}+</text>
+                            <text class="shop-distance">30分钟 830m</text>
+                        </view>
+                        <view class="shop-freight">
+                            <text>起送¥{{item.shop_limit}}</text>
+                            <text>配送¥{{item.shop_freight}}</text>
+                        </view>
+                        <view class="shop-coupon">
+                            <text class="coupon-item">{{item.shop_coupon}}</text>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

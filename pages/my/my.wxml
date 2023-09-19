@@ -1,0 +1,57 @@
+<view class="container">
+    <view class="header">
+        <view class="user-info">
+            <view class="avatar">
+                <image src="{{userInfo.avatar}}" mode="widthFix"></image>
+            </view>
+            <view class="user-desc">
+                <text>{{userInfo.username}}</text>
+                <text>135****0000</text>
+            </view>
+            <view class="user-setting" data-link="setting" bind:tap="jump">
+                <text>用户设置</text>
+            </view>
+        </view>
+    </view>
+    <view class="member-card">
+        <view class="member-card-content">
+            <view class="member-desc">
+                <text class="member-title">钻石会员</text>
+                <text>下单获赠津贴，使用津贴更优惠</text>
+            </view>
+            <view class="member-points">
+                <text class="member-text">津贴</text>
+                <text class="member-score">999</text>
+                <text class="member-text">></text>
+            </view>
+        </view>
+    </view>
+    <view class="user-function">
+        <view class="user-function-list">
+            <view class="user-function-item" data-link="{{item.link}}" bind:tap="jump" wx:for="{{accountList}}" wx:key="id">
+                <view class="icon-img">
+                    <image src="{{item.imgUrl}}" mode="widthFix"></image>
+                </view>
+                <text>{{item.title}}</text>
+            </view>
+        </view>
+    </view>
+    <view class="normal-use">
+        <view class="normal-use-content">
+            <view class="normal-title">
+                <text>常用工具</text>
+            </view>
+            <view class="normal-use-content-list">
+                <view class="normal-use-content-item" data-link="address" bind:tap="jump">
+                    <text class="iconfont icon-dingwei icon"></text>
+                    <text>我的地址</text>
+                </view>
+                <view class="normal-use-content-item" data-link="wallet" bind:tap="jump">
+                    <text class="iconfont icon-huiyuanqialeixingguanli icon"></text>
+                    <text>会员卡</text>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+

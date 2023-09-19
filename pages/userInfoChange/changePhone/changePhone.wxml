@@ -1,0 +1,19 @@
+<view class="container">
+    <van-cell-group>
+        <van-field
+                value="{{ username }}"
+                border="{{ false }}"
+                label="旧账号"
+                disabled
+        />
+    </van-cell-group>
+    <van-cell-group>
+        <van-field
+                value="{{ value }}"
+                placeholder="新帐号"
+                border="{{ false }}"
+                bind:change="onChange"
+                label="新帐号"
+        />
+    </van-cell-group>
+</view>

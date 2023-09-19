@@ -1,0 +1,45 @@
+<view class="container">
+    <view class="wallet">
+        <view class="wallet-content">
+            <view class="wallet-item">
+                <view class="wallet-left">
+                    <text class="charge" bind:tap="showPop">充值</text>
+                </view>
+                <view class="grap"></view>
+                <view class="wallet-right">
+                    <text class="money">{{balance}}</text>
+                    <text>余额</text>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="component">
+    <van-popup
+            show="{{ show }}"
+            position="bottom"
+            custom-style="height: 20%;"
+            bind:close="onClose"
+    >
+        <view class="input-content">
+            <view class="input-item">
+                <view class="left">
+                    <text>请输入金额</text>
+                    <input value="{{add}}" data-name="add" type="number" class="input-list" placeholder="0.00" bind:input="onChange"></input>
+                </view>
+                <view class="grap input"></view>
+                <view class="right">
+                    <text>请输入支付密码</text>
+                    <input value="{{pwd}}" data-name="pwd" type="password" class="input-list" placeholder="******" bind:input="onChange"></input>
+                </view>
+            </view>
+        </view>
+    </van-popup>
+</view>
+<view class="mask" wx:if="{{showMask}}">
+    <view class="loading">
+        <van-loading color="#ffffff" size="100rpx" vertical>
+            <text class="text">充值中...</text>
+        </van-loading>
+    </view>
+</view>

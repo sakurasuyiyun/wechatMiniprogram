@@ -1,0 +1,48 @@
+<view class="container">
+    <view class="form">
+        <view class="form-content">
+            <view class="form-item">
+                <view class="form-item-label">
+                    <text>+86</text>
+                </view>
+                <view class="form-item-content">
+                    <input type="text" model:value="{{username}}" placeholder="请输入手机号码"
+                           placeholder-class="placeholder"></input>
+                </view>
+            </view>
+            <view class="form-item">
+                <view class="form-item-label">
+                    <text>密码</text>
+                </view>
+                <view class="form-item-content">
+                    <input type="password" model:value="{{password}}" placeholder="请输入密码"
+                           placeholder-class="placeholder"></input>
+                </view>
+            </view>
+            <view class="form-item btn-item">
+                <view class="btn" bind:tap="login">
+                    <text>登陆</text>
+                </view>
+            </view>
+            <view class="form-rule">
+                <van-checkbox value="{{ isAllow }}" bind:change="changeAllow" checked-color="#e4393c" icon-size="28rpx">
+                    <text class="tips">若您输入的手机号未注册，将为您直接注册，注册即视为同意 <text class="important">味之舫用户注册协议、用户隐私政策</text>
+                    </text>
+                </van-checkbox>
+            </view>
+            <view class="wx-login" bind:tap="wxLogin">
+                <view class="wx-icon">
+                    <image src="../../assets/wx.png" mode="widthFix"></image>
+                </view>
+                <text>微信登陆</text>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="loading" wx:if="{{isLoading}}">
+    <view class="loading-item">
+        <van-loading color="#ffffff" size="100rpx" vertical>
+            <text class="text">{{loadingText}}</text>
+        </van-loading>
+    </view>
+</view>

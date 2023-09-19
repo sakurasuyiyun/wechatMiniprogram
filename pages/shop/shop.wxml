@@ -1,0 +1,76 @@
+<view class="container">
+    <view class="header">
+        <view class="shop-info">
+            <view class="shop-name">
+                <text>{{shopInfo.shop_name}}</text>
+            </view>
+            <view class="shop-desc">
+                <text class="shop-info-rank">{{shopInfo.shop_rank}}分</text>
+                <text>商家配送</text>
+                <text>约30分钟</text>
+                <text>月售{{shopInfo.shop_sales}}+</text>
+                <text>开发票</text>
+            </view>
+            <view class="shop-logo">
+                <image src="{{shopInfo.shop_imgUrl}}" mode="widthFix"></image>
+            </view>
+        </view>
+    </view>
+    <view class="shop-member-card" wx:if="{{shopInfo.shop_name === '麦肯牢'}}">
+        <view class="card-info">
+            <text class="title">麦肯牢会员</text>
+            <text>尊享会员权益</text>
+        </view>
+        <view class="card-btn">立即查看</view>
+    </view>
+    <view class="shop-product">
+        <van-sidebar active-key="{{ activeKey }}">
+            <van-sidebar-item data-category="{{item._id}}" bind:tap="onChange" wx:for="{{sideBarList}}" wx:key="id"
+                              title="{{item.shop_category}}"/>
+        </van-sidebar>
+        <view class="product-content">
+            <view class="product-list">
+                <view class="product-item" wx:for="{{products}}" wx:key="_id">
+                    <view class="product-img">
+                        <image src="{{item.product_imgUrl}}" mode="widthFix"></image>
+                    </view>
+                    <view class="product-info">
+                        <view class="product-title">
+                            <text>{{item.product_name}}</text>
+                        </view>
+                        <view class="product-desc">
+                            <text>{{item.product_desc === null ? '' : item.product_desc}}</text>
+                        </view>
+                        <view class="product-price">
+                            <text>¥{{item.product_price}}</text>
+                            <view class="product-control">
+                                <view class="sub" data-add="-1" data-product_id="{{item._id}}" bind:tap="changeCount"
+                                      wx:if="{{item.count}}">-
+                                </view>
+                                <text wx:if="{{item.count}}">{{item.count}}</text>
+                                <view class="add" data-add="1" data-product_id="{{item._id}}" bind:tap="changeCount">+
+                                </view>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="bottom">
+        <view class="product-bag">
+            <view class="bag-img {{totalPrice > 0 ? 'btn-active' : ''}}">
+                <image src="../../assets/bag.png" mode="widthFix"></image>
+                <view class="badge">{{totalProduct}}</view>
+            </view>
+            <view class="bag-info">
+                <text class="bag-price">¥<text>{{totalPrice}}</text></text>
+                <text>另需配送费约¥{{shopInfo.shop_freight}}</text>
+            </view>
+        </view>
+        <view class="submit-btn {{totalPrice > 0 ? 'btn-active' : ''}}">
+            <text wx:if="{{totalPrice}}" bind:tap="orderNow">去结算</text>
+            <text wx:else>¥{{shopInfo.shop_limit}}起送</text>
+        </view>
+    </view>
+</view>

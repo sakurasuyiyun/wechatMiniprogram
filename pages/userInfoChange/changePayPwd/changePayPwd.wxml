@@ -1,0 +1,40 @@
+<view class="container">
+    <van-cell-group>
+        <van-field
+                value="{{ oldPwd }}"
+                placeholder="请输入旧密码"
+                border="{{ false }}"
+                label="旧密码"
+                data-name="oldPwd"
+                maxlength="6"
+                password="{{ true }}"
+                bind:change="input"></van-field>
+    </van-cell-group>
+    <van-cell-group>
+        <van-field
+                value="{{ newPwd }}"
+                placeholder="请输入新密码"
+                border="{{ false }}"
+                label="新密码"
+                data-name="newPwd"
+                maxlength="6"
+                password="{{ true }}"
+                bind:change="input"></van-field>
+    </van-cell-group>
+    <van-cell-group>
+        <van-field
+                value="{{ confirmPwd }}"
+                placeholder="请再次输入新密码"
+                border="{{ false }}"
+                label="确认密码"
+                data-name="confirmPwd"
+                maxlength="6"
+                password="{{ true }}"
+                bind:change="input"></van-field>
+    </van-cell-group>
+    <view class="btn">
+        <view class="btn-item" bind:tap="submit">
+            <text>修改</text>
+        </view>
+    </view>
+</view>
